@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header{
+    width: 100%;
+    background: bisque;
+    height: 10vh;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header h1{
+    font-size: 3rem;
+    color: tomato;
+}
+nav ul li{
+    display: inline-block;
+}
+nav li a{
+font-size: 2rem;
+margin-right: 1.4rem;
+padding: 12px 25px ;
+text-decoration: none;
+color: black;
+transition: all 0.35s ;
+}
+nav li a:hover{
+    background-color: white;
+font-size: 2.3rem;
+}
+.container{
+    height: 90vh;
+    width: 100%;
+    background-color: cadetblue;
+    display: flex;
+}
+.col-1, .col-2{
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.col-1{
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.col-1 h1{
+    font-size: 6rem;
+    /* line-height: 100px; */
+    margin-bottom: 1rem;
+}
+.col-1 h2{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 4rem;
+}
+.col-1 p{
+    font-size: 1.4rem;
+}
+.col-2{
+    background-color: rgb(235, 226, 226);
+}
+button{
+    display: inline-block;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 1.8rem 5rem;
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: all 0.35s ease-in-out;
+}
+.feature-img{
+    width: 100%;
+    text-align: center;
+}
+.feature-img img{
+    width: 80%;
+}
+.small-img-row{
+    display: flex;
+    width: 80%;
+    margin:40px auto 0 auto ;
+    align-items: center;
+    justify-content: space-between;
+}
+.small-img{
+    height: 80px;
+    width: 80px;
+    color: #fff;
+    transition: transform 0.5s;
+}
+.small-img img{
+    width: 120px;
+ height: auto;
+  overflow: hidden;
+     transition: transform 0.5s;
+}
+button:hover{
+    background-color: #aa0505;
+    transform: translateY(-5%);
+}
+.small-img img:hover{
+    transform: scale(1.20);
+}
